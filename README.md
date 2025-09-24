@@ -15,9 +15,3 @@ Live at: [cybercal.netlify.app](https://cybercal.netlify.app/)
 - **State management / UI library**: (if you used Redux, Vuex, Context API, etc.)  
 - **Styling / UI**: (Tailwind, Bootstrap, Material UI, custom CSS, etc.)  
 - **Deployment**: Netlify (https://cybercal.netlify.app)
-- (Optional) **Backend / API**: (If your calendar app interacts with a backend, list it here)  
-
----
-
-
-
