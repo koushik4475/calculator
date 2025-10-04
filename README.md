@@ -1,7 +1,8 @@
+# calculator 
 visit : https://cybercal.netlify.app ( this is a simple dummy project  ) 
 preview : 
 <img width="1895" height="669" alt="image" src="https://github.com/user-attachments/assets/96946566-6f8a-4d83-a9df-430b0d2becc8" />
-# CyberCal
+
 
 A simple, modern web application — **CyberCal** — providing calendar functionality
 
