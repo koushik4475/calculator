@@ -1,4 +1,4 @@
-# calculator web 
+# calculator website 
 # project using (simple HTML,CSS,JS )  
 visit : https://cybercal.netlify.app ( this is a simple dummy project  ) 
 preview : 
