@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .calculator {
+    background: repeating-radial-gradient(#2d2ddbb8, rgb(0, 0, 0));
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid 1px #ffffff;
+    box-shadow: 4 5px 8px rgb(5, 255, 247);
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  #result{
+    background: repeating-radial-gradient(#00ff7bb8, rgb(255, 255, 255));
+      width: 100%;
+      padding: 10px;
+      font-size: 24px;
+      border: none;
+      box-shadow: 0 2px 5px rgb(12, 252, 40) inset;
+      border-radius: 5px;
+  }
+  
+  .buttons{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      margin-top: 20px;
+  }
+  
+  button{
+      padding: 10px;
+      font-size: 24px;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+  }
+  
+  button:hover{
+      background-color: #f1eaea;
+  }
+  
+  .clear{
+    background: repeating-radial-gradient(#ff0000b8, rgb(252, 4, 4));
+      color: #fff;
+  }
+  
+  .number, .decimal{
+    background: repeating-radial-gradient(#2d2ddbb8, rgb(0, 0, 0));
+      color: white;
+
+  
+  }
+  
+  .operator{
+      background: repeating-radial-gradient(#2d2ddbb8, rgb(0, 0, 0));
+      color: #fff;
+  }
+  
+  .equals{
+    background: repeating-radial-gradient(#171717, rgb(10, 234, 234));
+      grid-row: span 3;
+      color: #ffffff;
+  }
