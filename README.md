@@ -1,6 +1,9 @@
 <div align="center">
 
-# 🚀 CyberCalc
+# CyberCalc | Responsive Cyberpunk Calculator Web App
+
+CyberCalc is a responsive browser-based calculator with a cyberpunk-inspired interface, neon visual styling, animated interactions, and fast everyday calculations. The project is designed for people looking for a modern calculator web app that works across desktop and mobile screens. Try the live demo at https://cybercal.netlify.app and explore the front-end implementation in this repository.
+
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00F7FF&center=true&vCenter=true&width=600&lines=Next-Gen+Calculator;Sleek+%7C+Fast+%7C+Powerful" alt="Typing SVG" />
 
