@@ -1,6 +1,19 @@
 function evaluateExpression(expression) {
   expression = expression.replace(/×/g, "*").replace(/÷/g, "/");
+  if (expression.length > 512) throw new Error("Expression is too long");
+
   const tokens = expression.match(/\d+(?:\.\d*)?|\.\d+|[()+\-*/]/g) || [];
+  if (tokens.length > 256) throw new Error("Expression has too many tokens");
+
+  let nestingDepth = 0;
+  for (const token of tokens) {
+    if (token === "(") {
+      nestingDepth += 1;
+      if (nestingDepth > 100) throw new Error("Expression is nested too deeply");
+    } else if (token === ")") {
+      nestingDepth -= 1;
+    }
+  }
   if (tokens.join("") !== expression.replace(/\s/g, "")) {
     throw new Error("Invalid expression");
   }
