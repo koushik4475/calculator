@@ -106,7 +106,7 @@ if (typeof document !== "undefined") {
   document.addEventListener("keydown", (event) => {
     if (event.altKey || event.ctrlKey || event.metaKey) return;
     if (event.target instanceof HTMLElement &&
-        event.target.matches("input, textarea, select, [contenteditable='true']")) {
+        event.target.matches("input:not([readonly]), textarea, select, [contenteditable='true']")) {
       return;
     }
 
