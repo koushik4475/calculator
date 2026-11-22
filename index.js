@@ -1,4 +1,5 @@
 function evaluateExpression(expression) {
+  expression = expression.replace(/×/g, "*").replace(/÷/g, "/");
   const tokens = expression.match(/\d+(?:\.\d*)?|\.\d+|[()+\-*/]/g) || [];
   if (tokens.join("") !== expression.replace(/\s/g, "")) {
     throw new Error("Invalid expression");
@@ -118,6 +119,8 @@ if (typeof document !== "undefined") {
     let value = keyMap[event.key];
 
     if (/^[0-9()+\-*/.]$/.test(event.key)) value = event.key;
+    if (event.key === "×") value = "*";
+    if (event.key === "÷") value = "/";
     if (event.key === "Backspace") {
       event.preventDefault();
       result.value = result.value === "Error" ? "" : result.value.slice(0, -1);
