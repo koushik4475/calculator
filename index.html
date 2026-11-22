@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOUSHIK HY</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b16">
+  <meta name="description" content="CyberCalc is a responsive cyberpunk-style calculator for everyday arithmetic.">
+  <title>CyberCalc | Koushik HY</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <body style="background: repeating-radial-gradient(#7904ef, rgb(0, 0, 0));">
-    <div class="calculator">
-        <input type="text" id="result" readonly>
-        <div class="buttons">
-            <button class="clear">CLEAR</button>
-            <button class="operator">/</button>
-            <button class="operator">*</button>
-            <button class="operator">-</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="operator">+</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="equals">=</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="number">0</button>
-            <button class="decimal">.</button>
-            <button class="clear">KOUSHIK</button>
-        </div>
+  <main class="calculator" aria-label="Calculator">
+    <label class="sr-only" for="result">Calculation display</label>
+    <input
+      type="text"
+      id="result"
+      readonly
+      inputmode="none"
+      autocomplete="off"
+      spellcheck="false"
+      aria-live="polite"
+      aria-label="Calculation display"
+    >
+    <div class="buttons">
+      <button class="clear" type="button" data-action="CLEAR">CLEAR</button>
+      <button class="operator" type="button" aria-label="Divide">/</button>
+      <button class="operator" type="button" aria-label="Multiply">*</button>
+      <button class="operator" type="button" aria-label="Subtract">-</button>
+      <button class="number" type="button">7</button>
+      <button class="number" type="button">8</button>
+      <button class="number" type="button">9</button>
+      <button class="operator" type="button" aria-label="Add">+</button>
+      <button class="number" type="button">4</button>
+      <button class="number" type="button">5</button>
+      <button class="number" type="button">6</button>
+      <button class="equals" type="button">=</button>
+      <button class="number" type="button">1</button>
+      <button class="number" type="button">2</button>
+      <button class="number" type="button">3</button>
+      <button class="number" type="button">0</button>
+      <button class="decimal" type="button">.</button>
+      <button class="clear" type="button" data-action="CLEAR" aria-label="Clear calculator">C</button>
     </div>
-    <script src="index.js"></script>
+    <p class="keyboard-hint">Keyboard: 0–9, + − × ÷, Enter to calculate, Esc to clear</p>
+  </main>
+  <script src="index.js"></script>
 </body>
 </html>
