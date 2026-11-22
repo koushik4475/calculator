@@ -2,7 +2,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const { evaluateExpression } = require("../index.js");
 
-test("respects arithmetic precedence", () => {
+test("accepts typographic multiplication and division symbols", () => {\n  assert.equal(evaluateExpression("6 × 7"), 42);\n  assert.equal(evaluateExpression("21 ÷ 3"), 7);\n});\n\ntest("respects arithmetic precedence", () => {
   assert.equal(evaluateExpression("2+3*4"), 14);
 });
 
